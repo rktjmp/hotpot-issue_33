@@ -10,3 +10,9 @@ docker build -t nvim . && docker run -it nvim
 
 After this just execute `nvim`.
 
+## testing fennel
+
+```
+cd fennel-test
+fennel test.fnl
+```
