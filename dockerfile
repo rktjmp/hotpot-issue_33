@@ -12,3 +12,9 @@ RUN cd /root && tar xzf nvim-linux64.tar.gz
 ENV PATH /root/nvim-linux64/bin:$PATH
 
 COPY config /root/.config/nvim
+COPY fennel-test /root/fennel-test
+
+WORKDIR /root
+RUN cd fennel-test/libfennel \
+  && make
+ENV PATH /root/fennel-test/libfennel:$PATH
