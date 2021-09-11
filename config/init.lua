@@ -28,6 +28,15 @@ require("hotpot").setup({
         macros = {env = "_COMPILER", compilerEnv = _G, allowedGlobals = false}
     }
 })
+
+local fennel = require("hotpot.fennel")
+local allinoneloader = package.loaders[#package.loaders]
+local cloader = package.loaders[(#package.loaders - 1)]
+if fennel["macro-searchers"] then
+  table.insert(fennel["macro-searchers"], cloader)
+  table.insert(fennel["macro-searchers"], allinoneloader)
+end
+
 require("core")
 
 local function double_quote(str) return string.format([["%s"]], str) end
