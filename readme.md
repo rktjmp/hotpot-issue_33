@@ -1,6 +1,6 @@
-# Hotpot Issue [#30](https://github.com/rktjmp/hotpot.nvim/issues/30) Bug Reproduction
+# Hotpot Issue [#33](https://github.com/rktjmp/hotpot.nvim/issues/33) Bug Reproduction
 
-A reproduction of the hotpot issue [#29](https://github.com/rktjmp/hotpot.nvim/issues/30) using Docker.
+A reproduction of the hotpot issue [#33](https://github.com/rktjmp/hotpot.nvim/issues/33) using Docker.
 
 ## How to build and run
 
